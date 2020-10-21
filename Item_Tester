@@ -1,0 +1,22 @@
+package software;
+
+import java.util.Scanner;
+
+public class productTest 
+{
+
+	public static void main(String[] args) 
+	{
+	
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the new product details:");
+		int productId=sc.nextInt();
+		String name =sc.next();
+		double details=sc.nextDouble();
+		double price=sc.nextDouble();
+		
+		product p2=new product(productId,name,details,price);
+		System.out.println(p2.showDetails());	
+	}
+}
+
