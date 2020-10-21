@@ -1,0 +1,47 @@
+package software;
+
+public class customer {
+  private String name;
+  private String Address;
+  private double MobNo;
+  private String Email;
+  
+  customer(String name,String Address,double MobNo,String Email)
+  {
+	   this.name=name;
+	   this.Address=Address;
+	   this.MobNo=MobNo;
+	   this.Email=Email;
+	   
+  }
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getAddress() {
+	return Address;
+}
+public void setAddress(String address) {
+	Address = address;
+}
+public double getMobNo() {
+	return MobNo;
+}
+public void setMobNo(double mobNo) {
+	MobNo = mobNo;
+}
+public String getEmail() {
+	return Email;
+}
+public void setEmail(String email) {
+	Email = email;
+}
+public String showDetails()
+{
+	return (name+"," +Address+"," +MobNo+","+Email);
+	
+}
+  
+}
